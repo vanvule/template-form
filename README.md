@@ -109,7 +109,8 @@ Text: “Total fee of the policy is: $1100” whereas $1100 is the total fee of 
 Functions:
 Enter values of buyer
 Fields validations are triggered according to the configuration file
-
+<img width="1419" alt="image" src="https://github.com/vanvule/template-form/assets/61262843/6a8cb2e1-8561-477e-9697-0e77b6d2b4d4">
+<img width="1419" alt="image" src="https://github.com/vanvule/template-form/assets/61262843/8d3c20e6-9889-4aca-a971-ec47edef7858">
 
 #### Step 2: Buyer Information”: displays a form for users to choose insurance packages and its effective dates.
 Functions:
@@ -123,6 +124,12 @@ There 2 types of benefits:
 Mandatory benefits: Users cannot adjust mandatory benefits.
 Additional benefits: Users can pick which benefits they want. Each one has different pricing. 
 If the insured objects are under 16-age, they also have to pay for additional benefits.
+<img width="1419" alt="image" src="https://github.com/vanvule/template-form/assets/61262843/286d315e-d35d-4689-9feb-04da52cf3bd8">
+<img width="1419" alt="image" src="https://github.com/vanvule/template-form/assets/61262843/7d86a85c-9558-435a-b28e-1839dccc5434">
+<img width="1419" alt="image" src="https://github.com/vanvule/template-form/assets/61262843/27e7190d-7952-4dd3-b3e1-309e4c3d7f6e">
+
+
+
 
 
 
