@@ -1,0 +1,48 @@
+{
+  "fields": [
+    {
+      "name": "insurePackage",
+      "content": "Insurance Package",
+      "defaultValue": "",
+      "type": "select",
+      "validation": {
+        "required": true,
+        "pattern": "^(Golden|Sliver|Bronze)$"
+      },
+      "options": [
+        {
+          "value": "Golden",
+          "label": "Golden"
+        },
+        {
+          "value": "Sliver",
+          "label": "Sliver"
+        },
+        {
+          "value": "Bronze",
+          "label": "Bronze"
+        }
+      ]
+    },
+    {
+      "name": "startDate",
+      "content": "Start Date",
+      "defaultValue": "",
+      "type": "date",
+      "validation": {
+        "required": true,
+        "errorMessage": "Nhập ngày tháng đúng định dạng dd/mm/yyyy"
+      }
+    },
+    {
+      "name": "endDate",
+      "content": "End Date",
+      "defaultValue": "",
+      "type": "date",
+      "validation": {
+        "required": true,
+        "errorMessage": "Nhập ngày tháng đúng định dạng dd/mm/yyyy"
+      }
+    }
+  ]
+}

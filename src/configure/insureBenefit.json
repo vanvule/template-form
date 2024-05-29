@@ -1,0 +1,76 @@
+{
+  "fields": [
+    {
+      "name": "mandatory",
+      "content": "Mandatory Insurance Benefits",
+      "formControlLabel": [
+        {
+          "status": "checked",
+          "name": "mandatory1",
+          "mode": "read",
+          "label": "Death and permanent total disability due to accident/year",
+          "subLabel": "Insurance amount: $50.000",
+          "fee": 0,
+          "type": "checkbox",
+          "isStored": false
+        },
+        {
+          "status": "checked",
+          "name": "mandatory2",
+          "mode": "read",
+          "label": "Death and permanent total disability due to accident/year",
+          "subLabel": "Insurance amount: $50.000",
+          "fee": 0,
+          "type": "checkbox",
+          "isStored": false
+        },
+        {
+          "status": "checked",
+          "mode": "read",
+          "name": "mandatory3",
+          "label": "Medical expenses due to accidents/year",
+          "subLabel": "Insurance amount: $10.000",
+          "fee": 0,
+          "type": "checkbox",
+          "isStored": false
+        },
+        {
+          "status": "checked",
+          "mode": "read",
+          "name": "mandatory4",
+          "label": "Medical expenses due to accidents/year",
+          "subLabel": "Insurance amount: $10.000",
+          "fee": 0,
+          "type": "checkbox",
+          "isStored": false
+        }
+      ]
+    },
+    {
+      "name": "additional",
+      "content": "Additional Insurance Benefits",
+      "formControlLabel": [
+        {
+          "status": "none",
+          "mode": "edit",
+          "name": "additional1",
+          "label": "Outpatient treatment/year (+$100.00)",
+          "subLabel": "Insurance amount: $20.000",
+          "fee": 100,
+          "type": "checkbox",
+          "isStored": true
+        },
+        {
+          "status": "none",
+          "mode": "edit",
+          "name": "additional2",
+          "label": "Dental examinations and treatments/year (+$75.00)",
+          "subLabel": "Insurance amount: $15.000",
+          "fee": 75,
+          "type": "checkbox",
+          "isStored": true
+        }
+      ]
+    }
+  ]
+}

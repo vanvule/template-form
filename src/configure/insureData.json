@@ -1,0 +1,98 @@
+{
+  "fields": [
+    {
+      "name": "fullName",
+      "content": "Full Name",
+      "defaultValue": "",
+      "type": "text",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "dob",
+      "content": "Date of Birth",
+      "defaultValue": "",
+      "type": "date",
+      "validation": {
+        "required": true,
+        "errorMessage": "Nhập ngày tháng đúng định dạng dd/mm/yyyy"
+      }
+    },
+    {
+      "name": "gender",
+      "content": "Gender",
+      "defaultValue": "",
+      "type": "select",
+      "validation": {
+        "required": true,
+        "pattern": "^(Male|Female)$"
+      },
+      "options": [
+        {
+          "value": "Male",
+          "label": "Male"
+        },
+        {
+          "value": "Female",
+          "label": "Female"
+        }
+      ]
+    },
+    {
+      "name": "identification",
+      "content": "ID/Passport Number",
+      "defaultValue": "",
+      "type": "number",
+      "validation": {
+        "required": true,
+        "pattern": "^[0-9]{10}$",
+        "errorMessage": "Nhập đúng 10 chữ số"
+      }
+    },
+    {
+      "name": "dateOfIssue",
+      "content": "Date of Issue",
+      "defaultValue": "",
+      "type": "date",
+      "validation": {
+        "required": true,
+        "errorMessage": "Nhập ngày tháng đúng định dạng dd/mm/yyyy"
+      }
+    },
+    {
+      "name": "placeOfIssue",
+      "content": "Place of Issue",
+      "defaultValue": "",
+      "type": "text",
+      "validation": {
+        "required": true,
+        "pattern": "^[a-zA-Z ]+$"
+      }
+    },
+    {
+      "name": "relationship",
+      "content": "Relationship",
+      "defaultValue": "",
+      "type": "select",
+      "validation": {
+        "required": true,
+        "pattern": "^(Self|Spouse|Child)$"
+      },
+      "options": [
+        {
+          "value": "Self",
+          "label": "Self"
+        },
+        {
+          "value": "Spouse",
+          "label": "Spouse"
+        },
+        {
+          "value": "Child",
+          "label": "Child"
+        }
+      ]
+    }
+  ]
+}
