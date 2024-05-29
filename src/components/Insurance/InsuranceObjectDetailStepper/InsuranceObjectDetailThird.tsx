@@ -1,15 +1,15 @@
 
 
-import { TemplateForm } from '../../TemplateForm/TemplateForm';
-import { addPolicy, getPolicies, getPolicy, updatePolicy, deletePolicy } from '../../../store/indexedDB';
-import { useInsuranceContext } from '../InsuranceContext';
-import { useEffect, useRef, useState } from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import { useEffect, useState } from 'react';
+import { getPolicies, getPolicy, updatePolicy } from '../../../store/indexedDB';
+import { TemplateForm } from '../../TemplateForm/TemplateForm';
 import { TemplateFormGroup } from '../../TemplateFormGroup/TemplateFormGroup';
+import { useInsuranceContext } from '../InsuranceContext';
 
-import insurePackage from '../../../configure/insurePackage.json';
 import insureBenefit from '../../../configure/insureBenefit.json';
+import insurePackage from '../../../configure/insurePackage.json';
 
 const INSURANCE_OBJECT_DETAIL_THIRD_STEP_ID = 'insurance-object-detail-third';
 const INSURANCE_OBJECT_DETAIL_THIRD_STEP_FORM_CONTROL_ID = 'insurance-object-detail-third-form-control';

@@ -11,6 +11,41 @@ interface TemplateFormProps {
   onSubmit: (data: PolicyData) => void;
 }
 
+/**
+ * TemplateForm component renders a dynamic form based on the provided configuration.
+ * 
+ * Usage:
+ * ```tsx
+ * import { TemplateForm } from './TemplateForm';
+ * 
+ * const formConfig = {
+ *   fields: [
+ *     { name: 'fullName', content: 'Full Name', type: 'text', validation: { required: true } },
+ *     { name: 'age', content: 'Age', type: 'number', validation: { required: true, min: 1 } },
+ *     { name: 'gender', content: 'Gender', type: 'select', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }] }
+ *   ]
+ * };
+ * 
+ * const policy = {
+ *  fullName: 'John Doe',
+ *  age: 30,
+ * };
+ * 
+ * const handleSubmit = (data: PolicyData) => {
+ *   console.log('Submitted data:', data);
+ * };
+ * 
+ * <TemplateForm
+ *   id="myForm"
+ *   mode="edit"
+ *   config={formConfig}
+ *   onSubmit={handleSubmit}
+ * />
+ * ```
+ * 
+ * @param {TemplateFormProps} props - The properties passed to the component.
+ * @returns {JSX.Element} The rendered form component.
+ */
 export const TemplateForm: React.FC<TemplateFormProps> = (props) => {
   const formDataRef = useRef<PolicyData>({});
   const [errors, setErrors] = useState<{ [key: string]: string }>({});

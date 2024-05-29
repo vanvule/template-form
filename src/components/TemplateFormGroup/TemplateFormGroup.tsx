@@ -6,9 +6,49 @@ import { TemplateFormGroupProps } from './TemplateFormGroup.type';
 
 import styles from './TemplateFormGroup.module.scss';
 
-
+/**
+ * TemplateFormGroup component renders a group of checkboxes based on the provided configuration.
+ * 
+ * Usage:
+ * ```tsx
+ * import { TemplateFormGroup } from './TemplateFormGroup';
+ * 
+ * const formGroupData = {
+ *   fields: [
+ *     {
+ *       name: 'group1',
+ *       content: 'Group 1',
+ *       formControlLabel: [
+ *         { name: 'field1', label: 'Field 1', subLabel: 'SubLabel 1', status: 'checked', fee: 10, isStored: true, mode: 'edit' },
+ *         { name: 'field2', label: 'Field 2', subLabel: 'SubLabel 2', status: 'unchecked', fee: 20, isStored: false, mode: 'edit' }
+ *       ]
+ *     },
+ *     {
+ *       name: 'group2',
+ *       content: 'Group 2',
+ *       formControlLabel: [
+ *         { name: 'field3', label: 'Field 3', subLabel: 'SubLabel 3', status: 'checked', fee: 30, isStored: true, mode: 'read' },
+ *         { name: 'field4', label: 'Field 4', subLabel: 'SubLabel 4', status: 'unchecked', fee: 40, isStored: false, mode: 'edit' }
+ *       ]
+ *     }
+ *   ]
+ * };
+ * 
+ * const handleFormGroupSubmit = (storedData) => {
+ *   console.log('Stored data:', storedData);
+ * };
+ * 
+ * <TemplateFormGroup
+ *   id="myFormGroup"
+ *   data={formGroupData}
+ *   onSubmit={handleFormGroupSubmit}
+ * />
+ * ```
+ * 
+ * @param {TemplateFormGroupProps} props - The properties passed to the component.
+ * @returns {JSX.Element} The rendered form group component.
+ */
 export const TemplateFormGroup: React.FC<TemplateFormGroupProps> = (props) => {
-
   const { id, data, onSubmit } = props;
 
   const [formState, setFormState] = useState(() => {
@@ -29,7 +69,7 @@ export const TemplateFormGroup: React.FC<TemplateFormGroupProps> = (props) => {
     }));
 
     if (isStored) {
-      console.log(`Field ${name} changed to ${checked}. Fee: ${fee}`);
+      
     }
   };
 
